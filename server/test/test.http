@@ -1,0 +1,30 @@
+GET http://localhost:4000/api/v1/todos
+
+###
+
+POST http://localhost:4000/api/v1/todos
+content-type: application/json
+
+{
+    "title": "Redőny bekötés",
+    "comment": "be kell kötni a redőny kapcsolóját",
+    "createdAt": "2023-07-18" 
+}
+
+###
+
+DELETE  http://localhost:4000/api/v1/todos/64c13b2556108a7bc7679727
+content-type: application/json
+
+###
+
+PATCH   http://localhost:4000/api/v1/todos/64c8f58ec051f87bbdf2d899
+content-type: application/json
+
+{
+ "_id": "64c8f58ec051f87bbdf2d899",
+ "title": "ccccsssssss",
+ "comment": "ddd",
+ "createdAt": "2022-07-18" 
+}
+###
